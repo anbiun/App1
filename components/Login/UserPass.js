@@ -26,9 +26,6 @@ const UserPass = () => {
     );
 };
 
-LoginScreen.navigationOptions = navData => {
-
-}
 // define your styles
 const styles = StyleSheet.create({
     container: {
