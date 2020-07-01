@@ -33,7 +33,7 @@ const defaultNavOptions = {
   headerTintColor: Platform.OS === 'android' ? 'white' : Colors.primary
 };
 
-const loginNavOptions = {headerShown: false}
+const loginNavOptions = { headerShown: false }
 
 const LoginNavigator = createStackNavigator(
   {

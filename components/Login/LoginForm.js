@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet,TouchableOpacity } from 'react-native';
 import Logo from './Logo'
 import UserPass from './UserPass'
 
@@ -8,9 +8,10 @@ const LoginForm = () => {
     return (
         <View style={styles.container}>
             <Logo />
-            <View style={styles.userPass}>
-                <UserPass />
-            </View>
+            <UserPass />
+            <TouchableOpacity style={styles.button} >
+                <Text style={styles.buttonText}>Sign in</Text>
+            </TouchableOpacity>
         </View>
 
     );

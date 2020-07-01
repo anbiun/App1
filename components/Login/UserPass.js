@@ -1,10 +1,10 @@
 //import liraries
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import { TextInput, TouchableOpacity } from 'react-native-gesture-handler';
-import LoginScreen from '../../screens/LoginScreen'
+import { View, Text, StyleSheet, Button } from 'react-native';
+import { TextInput,  } from 'react-native-gesture-handler';
 // create a component
-const UserPass = () => {
+
+const UserPass = ({navigation})  => {
     return (
         <View>
             <TextInput style={styles.inputBox}
@@ -19,12 +19,11 @@ const UserPass = () => {
                 placeholderTextColor="#000"
             />
 
-            <TouchableOpacity style={styles.button}>
-                <Text style={styles.buttonText}>Sign in</Text>
-            </TouchableOpacity>
         </View>
     );
-};
+}
+
+
 
 // define your styles
 const styles = StyleSheet.create({
